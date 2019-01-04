@@ -5,11 +5,14 @@ html {
 body {
   background-color: #f9f8f6;
   font-family: arial, "HGゴシック M メディウム";
-  font-weight: 600;
+  font-weight: bold;
   font-size: 12px;
   font-size: 1.2rem; }
 
 p {
+  margin-bottom: 0; }
+
+ul {
   margin-bottom: 0; }
 
 .clearfix::after {
@@ -50,12 +53,12 @@ header h1 {
           display: none;
           z-index: 100; }
         header .sp_navi li .sp_navi_li {
-          width: 180px;
+          width: 100%;
           position: absolute;
-          top: 81px;
-          right: 2%;
+          top: 85px;
+          right: 0;
           border: 1px solid #eee;
-          background: white;
+          background: #ff6d77;
           margin: 0;
           padding: 0; }
           header .sp_navi li .sp_navi_li li {
@@ -64,12 +67,17 @@ header h1 {
             margin: 0;
             padding: 0; }
             header .sp_navi li .sp_navi_li li a {
+              text-align: left;
               display: block;
-              padding: 10px 8px;
-              border-bottom: 1px solid #eee;
-              font-size: 14px;
+              padding: 10px 25px 13px 25px;
+              border-bottom: 1px solid #ffffff;
+              font-size: 15px;
               text-decoration: none;
-              color: #887f69; }
+              color: #ffffff; }
+            header .sp_navi li .sp_navi_li li .first {
+              padding-top: 22px; }
+            header .sp_navi li .sp_navi_li li .last {
+              padding-bottom: 30px; }
     header .pc_navi {
       display: none; } }
 @media (min-width: 551px) {
@@ -549,6 +557,10 @@ footer .copy {
     #products .color_size table td {
       text-align: center;
       border: solid 1px #e8e4da; }
+    #products .color_size table th:last-child {
+      padding-right: 15px; }
+    #products .color_size table td:last-child {
+      padding-right: 15px; }
     #products .color_size table .squre {
       border: solid 1px #e8e4da;
       width: 15px;
@@ -567,9 +579,7 @@ footer .copy {
     box-sizing: border-box;
     float: left; }
     #products #list_img li .box_5 {
-      margin-right: 0; }
-  #products .color_size .table td:last-child {
-    padding-right: auto; } }
+      margin-right: 0; } }
 @media (min-width: 551px) {
   #products .product_id {
     padding-top: 40px;
@@ -579,14 +589,18 @@ footer .copy {
       float: left; }
     #products .product_id .product_num {
       float: right; }
+  #products #display_img {
+    float: left;
+    width: 71%; }
   #products #list_img {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    width: 29%; }
     #products #list_img li {
-      margin-right: 10px;
+      float: left;
       margin-bottom: 10px;
-      margin-left: 0;
-      width: calc(100% / 2 - 10px);
+      margin-left: 3%;
+      width: 46%;
       box-sizing: border-box;
       display: block;
       list-style: none;

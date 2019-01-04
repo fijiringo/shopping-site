@@ -23,12 +23,16 @@ $key: #887f69;
 body {
     background-color: $base;
     font-family: arial, "HGゴシック M メディウム";
-    font-weight: 600;
+    font-weight: bold;
     @include fontsize(12);
 }
 
 p {
     margin-bottom: 0;
+}
+
+ul{
+   margin-bottom: 0;   
 }
 
 .clearfix::after {
@@ -84,26 +88,34 @@ header {
                     
                 }
                 .sp_navi_li {
-                    width: 180px;
+                    width: 100%;
                     position: absolute;
-                    top: 81px;
-                    right: 2%;
+                    top: 85px;
+                    right: 0;
                     border: 1px solid #eee;
-                    background: white;
+                    background: #ff6d77;
                     margin: 0;
                     padding: 0;
+                    
                     li {
                         display: block;
                         list-style: none;
                         margin: 0;
                         padding: 0;
                         a {
+                            text-align:left;
                             display: block;
-                            padding: 10px 8px;
-                            border-bottom: 1px solid #eee;
-                            font-size: 14px;
+                            padding: 10px 25px 13px 25px;
+                            border-bottom: 1px solid $sub;
+                            font-size: 15px;
                             text-decoration: none;
-                            color: $key;
+                            color: $sub;
+                        }
+                        .first{
+                            padding-top: 22px;
+                        }
+                        .last{
+                            padding-bottom: 30px;
                         }
                     }
                 }
@@ -817,6 +829,12 @@ footer {
                 text-align: center;
                 border: solid 1px #e8e4da;
             }
+            th:last-child {
+                    padding-right: 15px;
+            }
+            td:last-child {
+                    padding-right: 15px;
+            }
             .squre{
                    border: solid 1px #e8e4da;
                    width: 15px;
@@ -833,6 +851,7 @@ footer {
             margin-left: calc(((100vw - 100%) / 2) * -1);
             margin-right: calc(((100vw - 100%) / 2) * -1);
         }
+        
         #list_img {
             li {
                 display: inline-block;
@@ -841,14 +860,6 @@ footer {
                 float:left;
                 .box_5{
                     margin-right: 0;
-                }
-            }
-        }
-        .color_size{
-            .table{
-                td:last-child {
-                    padding-right: auto;
-                    
                 }
             }
         }
@@ -865,14 +876,20 @@ footer {
                 float: right;
             }
         }
+        #display_img{
+            float:left;
+            width:71%;
+        }
         #list_img {
             display: flex;
             flex-wrap: wrap;
+            width: 29%;
                 li {
-            margin-right: 10px;
+                    float: left;
+            
             margin-bottom: 10px;
-            margin-left: 0;
-            width: calc(100% / 2 - 10px);
+            margin-left: 3%;
+            width: 46%;
             box-sizing: border-box;
             display: block;
             list-style: none;
