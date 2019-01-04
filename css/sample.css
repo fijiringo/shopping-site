@@ -7,7 +7,8 @@ body {
   font-family: arial, "HGゴシック M メディウム";
   font-weight: bold;
   font-size: 12px;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  color: #404040; }
 
 p {
   margin-bottom: 0; }
@@ -74,7 +75,8 @@ header h1 {
               text-decoration: none;
               color: #ffffff;
               margin-left: 20px;
-              margin-right: 20px; }
+              margin-right: 20px;
+              font-weight: normal; }
             header .sp_navi li .sp_navi_li li .first {
               padding-top: 22px; }
             header .sp_navi li .sp_navi_li li .last {
@@ -671,9 +673,11 @@ footer .copy {
   #products .product_detail table th {
     background-color: #f9f8f6;
     text-align: center;
-    border: solid 1px #e8e4da; }
+    border: solid 1px #e8e4da;
+    width: 33%; }
   #products .product_detail table td {
-    border: solid 1px #e8e4da; }
+    border: solid 1px #e8e4da;
+    width: 67%; }
 @media (max-width: 550px) {
   #products .product_detail .product_detail_h {
     margin-top: 0;

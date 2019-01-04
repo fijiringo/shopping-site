@@ -25,6 +25,7 @@ body {
     font-family: arial, "HGゴシック M メディウム";
     font-weight: bold;
     @include fontsize(12);
+    color: #404040;
 }
 
 p {
@@ -112,6 +113,7 @@ header {
                             color: $sub;
                             margin-left: 20px;
                             margin-right: 20px;
+                            font-weight: normal;
                         }
                         .first{
                             padding-top: 22px;
@@ -994,9 +996,11 @@ footer {
                 background-color: $base;
                 text-align: center;
                 border: solid 1px #e8e4da;
+                width:33%;
             }
             td {
                 border: solid 1px #e8e4da;
+                width: 67%;
                 }
             }
         @media (max-width: 550px) {
